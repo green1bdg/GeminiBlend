@@ -1,0 +1,17 @@
+{
+  "object_name": "SMR_Reactor_Silo",
+  "type": "MESH",
+  "world_matrix": [...], 
+  "geometry": {
+    "vertex_count": 128,
+    "vertices": {
+      "v0": [0.0, 0.0, -15.0],
+      "v1": [0.0, 1.0, -15.0]
+      // ... i tak dalej
+    },
+    "faces": [
+      [0, 1, 2, 3], // Indeksy werteksów tworzących ścianę (Quad)
+      [4, 5, 6]     // Trójkąt
+    ]
+  }
+}
