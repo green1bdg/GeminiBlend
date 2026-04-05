@@ -1,0 +1,31 @@
+1. set up python virtual environment because we do not want to install dependencies on our localhost, but rather store them in the venv. [DONE] - available at https://github.com/green1bdg/Geminiblend-venv
+
+2. install dependencies [DONE] - available at https://github.com/green1bdg/Geminiblend-venv
+
+
+
+working on the payload
+1. formulate paylod [DONE]
+  run blender
+  try to get information about geometry from blender[DONE]
+  convert that information into json[DONE]
+
+
+--- SCENE CONTEXT PARSED ---
+{"metadata": {"name": "Cube", "type": "mesh", "units": "METRIC"}, "transform": {"location": [0.0, 0.0, 0.0], "rotation_euler": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0]}, "geometry": {"vertices": [[1.0, 1.0, 1.0], [1.0, 1.0, -1.0], [1.0, -1.0, 1.0], [1.0, -1.0, -1.0], [-3.35, 1.0, 1.0], [-3.35, 1.0, -1.0], [-3.35, -1.0, 1.0], [-3.35, -1.0, -1.0], [-1.175, 1.0, -1.0], [-1.175, -1.0, 1.0], [-1.175, -1.0, -1.0], [-1.175, 1.0, 1.0], [-2.251, 1.0, -1.0], [-2.251, -1.0, 1.0], [-2.251, -1.0, -1.0], [-2.251, 1.0, 1.0], [-0.088, -1.0, -1.0], [-0.088, 1.0, 1.0], [-0.088, 1.0, -1.0], [-0.088, -1.0, 1.0], [1.0, 1.0, 0.0], [-3.35, -1.0, 0.0], [1.0, -1.0, 0.0], [-3.35, 1.0, 0.0], [-1.175, 1.0, 0.0], [-1.175, -1.0, 0.0], [-2.251, 1.0, 0.0], [-2.251, -1.0, 0.0], [-0.088, -1.0, 0.0], [-0.088, 1.0, 0.0], [-2.251, 2.623, -1.0], [-3.35, 2.623, -1.0], [1.0, 2.623, 0.0], [1.0, 2.623, -1.0], [-3.35, 2.623, 0.0], [-0.088, 2.623, -1.0], [-1.175, 2.623, -1.0], [-1.175, 2.623, 0.0], [-2.251, 2.623, 0.0], [-0.088, 2.623, 0.0]], "faces": [[15, 4, 6, 13], [27, 13, 6, 21], [21, 6, 4, 23], [18, 1, 3, 16], [20, 0, 2, 22], [29, 17, 0, 20], [26, 15, 11, 24], [12, 8, 10, 14], [28, 19, 9, 25], [17, 11, 9, 19], [5, 12, 14, 7], [23, 4, 15, 26], [25, 9, 13, 27], [11, 15, 13, 9], [0, 17, 19, 2], [22, 2, 19, 28], [24, 11, 17, 29], [8, 18, 16, 10], [5, 23, 34, 31], [3, 22, 28, 16], [10, 25, 27, 14], [23, 26, 38, 34], [16, 28, 25, 10], [12, 5, 31, 30], [29, 20, 32, 39], [1, 20, 22, 3], [7, 21, 23, 5], [14, 27, 21, 7], [36, 37, 39, 35], [31, 34, 38, 30], [30, 38, 37, 36], [35, 39, 32, 33], [24, 29, 39, 37], [18, 8, 36, 35], [20, 1, 33, 32], [1, 18, 35, 33], [8, 12, 30, 36], [26, 24, 37, 38]]}}
+
+
+
+
+
+
+
+2. send payload [DONE]
+  set up a simple way to send the example data to google with use of Fast API module [DONE]
+  prepare json with data from blender and the required data for google rest api [DONE]
+3. receive a reponse [DONE]
+
+
+4. wait for a new model from Google that will handle this type of requests [IN PROGRESS] 
+
+end goal for the test is to prompt Gemini AI to fix our messy stairs and make them longer
